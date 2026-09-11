@@ -17,6 +17,27 @@ quiz1 = Quiz.create!(
   description: 'American History 1776 - 1800'
 )
 
+quiz1_q1 = Question.create!(
+  stem:         'What city was the first capital of the United States?',
+  answer:       'New York City',
+  distractor_1: 'Washington, D.C.',
+  distractor_2: 'Boston'
+)
+
+quiz1_q2 = Question.create!(
+  stem:         'Who first discovered America?',
+  answer:       'Leif Erikson',
+  distractor_1: 'Christopher Columbus',
+  distractor_2: 'The Pilgrims'
+)
+
+quiz1_q3 = Question.create!(
+  stem:         'When was the Declaration of Independence signed?',
+  answer:       'August 2nd, 1776',
+  distractor_1: 'July 4, 1776',
+  distractor_2: 'September 3, 1783'
+)
+
 # Quiz 2
 
 quiz2 = Quiz.create!(
