@@ -1,0 +1,5 @@
+class AddQuizFkColToQuestions < ActiveRecord::Migration[7.2]
+  def change
+    add_reference :questions, :quiz, foreign_key: true
+  end
+end
