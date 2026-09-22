@@ -1,0 +1,28 @@
+<div id="<%= dom_id @question %>">
+  <p>
+    <strong><%= @question.stem %></strong>
+  </p>
+
+  <p>
+    <strong>Answer:</strong>
+    <%= @question.answer %>
+  </p>
+
+  <p>
+    <strong>Distractor 1:</strong>
+    <%= @question.distractor_1 %>
+  </p>
+
+  <p>
+    <strong>Distractor 2:</strong>
+    <%= @question.distractor_2 %>
+  </p>
+
+</div>
+
+<div>
+  <%= link_to 'Edit this question', edit_question_path(@question) %> |
+  <%= link_to 'Back to questions', questions_path %>
+
+  <%= button_to 'Destroy this question', question_path(@question), method: :delete %>
+</div>

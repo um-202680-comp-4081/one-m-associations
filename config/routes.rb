@@ -22,4 +22,12 @@ Rails.application.routes.draw do
   get 'quizzes/:id/edit', to: 'quizzes#edit', as: 'edit_quiz'
   patch 'quizzes/:id', to: 'quizzes#update'
   delete 'quizzes/:id', to: 'quizzes#destroy'
+
+  get 'questions', to: 'questions#index', as: 'questions'
+  post 'questions', to: 'questions#create'
+  get 'questions/new', to: 'questions#new', as: 'new_question'
+  get 'questions/:id', to: 'questions#show', as: 'question'
+  get 'questions/:id/edit', to: 'questions#edit', as: 'edit_question'
+  patch 'questions/:id', to: 'questions#update'
+  delete 'questions/:id', to: 'questions#destroy'
 end

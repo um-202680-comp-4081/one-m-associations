@@ -1,0 +1,17 @@
+<% content_for :title, 'New question' %>
+
+<h1>New question</h1>
+
+<%= bootstrap_form_with model: @question, method: :post, url: questions_path do |f| %>
+  <%= f.text_field :stem %>
+  <%= f.text_field :answer %>
+  <%= f.text_field :distractor_1 %>
+  <%= f.text_field :distractor_2 %>
+  <%= f.submit class: 'btn btn-primary' %>
+<% end %>
+
+<br>
+
+<div>
+  <%= link_to 'Back to questions', questions_path %>
+</div>
