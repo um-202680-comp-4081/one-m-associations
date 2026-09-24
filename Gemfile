@@ -78,7 +78,7 @@ gem 'bootstrap', '~> 5.2.3'
 gem 'bootswatch', github: 'thomaspark/bootswatch', tag: 'v5.2.3'
 
 # Bootstrap-styled rails form helpers
-gem 'bootstrap_form', '~> 5.2.3'
+gem 'bootstrap_form', '~> 5.6.1'
 
 # Ruby static code analyzer (a.k.a. linter) and code formatter
 # gem 'rubocop', require: false, group: %i[development test]
