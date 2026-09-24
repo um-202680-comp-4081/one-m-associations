@@ -87,8 +87,6 @@ GEM
       activerecord (>= 6.0.0)
       activesupport (>= 6.0.0)
     ast (2.4.3)
-    autoprefixer-rails (10.4.21.0)
-      execjs (~> 2)
     base64 (0.3.0)
     benchmark (0.5.0)
     better_html (2.2.0)
@@ -98,14 +96,12 @@ GEM
       erubi (~> 1.4)
       parser (>= 2.4)
       smart_properties
-    bigdecimal (4.1.2)
+    bigdecimal (4.1.3)
     bindex (0.8.1)
     bootsnap (1.26.0)
       msgpack (~> 1.5)
-    bootstrap (5.2.3)
-      autoprefixer-rails (>= 9.1.0)
-      popper_js (>= 2.11.6, < 3)
-      sassc-rails (>= 2.0.0)
+    bootstrap (5.3.8)
+      popper_js (>= 2.11.8, < 3)
     bootstrap_form (5.2.3)
       actionpack (>= 6.0)
       activemodel (>= 6.0)
@@ -139,16 +135,6 @@ GEM
       rubocop (>= 1)
       smart_properties
     erubi (1.13.1)
-    execjs (2.10.2)
-      json (>= 2)
-    ffi (1.17.4-aarch64-linux-gnu)
-    ffi (1.17.4-aarch64-linux-musl)
-    ffi (1.17.4-arm-linux-gnu)
-    ffi (1.17.4-arm-linux-musl)
-    ffi (1.17.4-arm64-darwin)
-    ffi (1.17.4-x86_64-darwin)
-    ffi (1.17.4-x86_64-linux-gnu)
-    ffi (1.17.4-x86_64-linux-musl)
     globalid (1.4.0)
       activesupport (>= 6.1)
     htmlbeautifier (1.4.3)
@@ -158,7 +144,7 @@ GEM
       actionpack (>= 6.0.0)
       activesupport (>= 6.0.0)
       railties (>= 6.0.0)
-    io-console (0.9.2)
+    io-console (0.9.4)
     irb (1.18.0)
       pp (>= 0.6.0)
       prism (>= 1.3.0)
@@ -330,14 +316,6 @@ GEM
       rubocop-rspec (~> 3.5)
     ruby-progressbar (1.13.0)
     rubyzip (3.6.0)
-    sassc (2.4.0)
-      ffi (~> 1.9)
-    sassc-rails (2.1.2)
-      railties (>= 4.0.0)
-      sassc (>= 2.0)
-      sprockets (> 3.0)
-      sprockets-rails
-      tilt
     securerandom (0.4.1)
     selenium-webdriver (4.49.0)
       base64 (~> 0.2)
@@ -357,7 +335,6 @@ GEM
     stimulus-rails (1.3.4)
       railties (>= 6.0.0)
     thor (1.5.0)
-    tilt (2.9.0)
     timeout (0.6.1)
     tsort (0.2.0)
     turbo-rails (2.0.23)
@@ -398,7 +375,7 @@ PLATFORMS
 DEPENDENCIES
   annotaterb
   bootsnap
-  bootstrap (~> 5.2.3)
+  bootstrap (~> 5.3.8)
   bootstrap_form (~> 5.2.3)
   bootswatch!
   brakeman
@@ -441,14 +418,13 @@ CHECKSUMS
   addressable (2.9.0) sha256=7fdf6ac3660f7f4e867a0838be3f6cf722ace541dd97767fa42bc6cfa980c7af
   annotaterb (4.24.0) sha256=3953d3a3fb86ef06639a8d5ea29001e4af1e51cabd147973b1b23524b8fbced6
   ast (2.4.3) sha256=954615157c1d6a382bc27d690d973195e79db7f55e9765ac7c481c60bdb4d383
-  autoprefixer-rails (10.4.21.0) sha256=71b48caf850fc25275abd96f0b1fdd51c82e1c9b99cd30085cacb05da9c70235
   base64 (0.3.0) sha256=27337aeabad6ffae05c265c450490628ef3ebd4b67be58257393227588f5a97b
   benchmark (0.5.0) sha256=465df122341aedcb81a2a24b4d3bd19b6c67c1530713fd533f3ff034e419236c
   better_html (2.2.0) sha256=e68ab66ab09696b708333bbf35e8aa3c107500ba7892f528e2111624bdd8cf76
-  bigdecimal (4.1.2) sha256=53d217666027eab4280346fba98e7d5b66baaae1b9c3c1c0ffe89d48188a3fbd
+  bigdecimal (4.1.3) sha256=61ebe1e5e559bdc3cc6f2c0ee7f427321fc838f59611c294356eb04d6e21cf66
   bindex (0.8.1) sha256=7b1ecc9dc539ed8bccfc8cb4d2732046227b09d6f37582ff12e50a5047ceb17e
   bootsnap (1.26.0) sha256=ca96237015e6cd74a02963d5821cf00ac5ea134653b323e8cd6d702a7718bf1b
-  bootstrap (5.2.3) sha256=2037774d356123181a4650a05cf2056bf3d035d3c4240ebfb381eaa9a30f17f0
+  bootstrap (5.3.8) sha256=1c23b06df24ec28a0058ad90a0da93e260d2c0a5c453d7087f6bad428464742f
   bootstrap_form (5.2.3) sha256=5542b8c2a121cfd96cfa91d3cc76901ec148d98f197fb51152608b608571aa25
   bootswatch (5.2.3)
   brakeman (8.0.6) sha256=759cc69341115e6c2dcd47b6fd8649a0b9bd540e3585ac8a0a94e31c66fee386
@@ -464,20 +440,11 @@ CHECKSUMS
   erb (6.0.7) sha256=c5ca6dc25b0ef974a44dc8f59fe847577122483b1968a38dec305c60bf91ee92
   erb_lint (0.9.0) sha256=dfb5e40ad839e8d1f0d56ca85ec9a7ac4c9cd966ec281138282f35b323ca7c31
   erubi (1.13.1) sha256=a082103b0885dbc5ecf1172fede897f9ebdb745a4b97a5e8dc63953db1ee4ad9
-  execjs (2.10.2) sha256=466cf2b49e50c0cfdff8fdb88a7a983dfab7ac0f6185c317ccb434a75c224c88
-  ffi (1.17.4-aarch64-linux-gnu) sha256=b208f06f91ffd8f5e1193da3cae3d2ccfc27fc36fba577baf698d26d91c080df
-  ffi (1.17.4-aarch64-linux-musl) sha256=9286b7a615f2676245283aef0a0a3b475ae3aae2bb5448baace630bb77b91f39
-  ffi (1.17.4-arm-linux-gnu) sha256=d6dbddf7cb77bf955411af5f187a65b8cd378cb003c15c05697f5feee1cb1564
-  ffi (1.17.4-arm-linux-musl) sha256=9d4838ded0465bef6e2426935f6bcc93134b6616785a84ffd2a3d82bc3cf6f95
-  ffi (1.17.4-arm64-darwin) sha256=19071aaf1419251b0a46852abf960e77330a3b334d13a4ab51d58b31a937001b
-  ffi (1.17.4-x86_64-darwin) sha256=aa70390523cf3235096cf64962b709b4cfbd5c082a2cb2ae714eb0fe2ccda496
-  ffi (1.17.4-x86_64-linux-gnu) sha256=9d3db14c2eae074b382fa9c083fe95aec6e0a1451da249eab096c34002bc752d
-  ffi (1.17.4-x86_64-linux-musl) sha256=3fdf9888483de005f8ef8d1cf2d3b20d86626af206cbf780f6a6a12439a9c49e
   globalid (1.4.0) sha256=037f12fbf1d9d7a014d501c2d5c77356fd4ddd96d7a7991d6700bba96706f427
   htmlbeautifier (1.4.3) sha256=b43d08f7e2aa6ae1b5a6f0607b4ed8954c8d4a8e85fd2336f975dda1e4db385b
   i18n (1.15.2) sha256=00f9eb62412fe593b2a65a97daa75300d37abb8f7202ec748e94b6d46a9dd1b5
   importmap-rails (2.2.3) sha256=7101be2a4dc97cf1558fb8f573a718404c5f6bcfe94f304bf1f39e444feeb16a
-  io-console (0.9.2) sha256=efa74f891dd03c0939a931dfc6e74c2813d904763d456ea9762b0525e748db08
+  io-console (0.9.4) sha256=a403304f32928ee85e56d457b4612ca43f2703b561a3258844992bd24085fbb1
   irb (1.18.0) sha256=de9454a0703a54704b9811a5ef31a60c86949fbf4013fcf244fabc7c775248e3
   jbuilder (2.15.1) sha256=2430bec28fb0cebacb5875b1009cf9d8bc3c303ccb810c4c8b062a4b51457637
   json (2.21.2) sha256=1f1d3b7cf2b3ba1a69beca0bb6db13d5438b80bff3cd54cdaaa620b9b07c1c6a
@@ -547,8 +514,6 @@ CHECKSUMS
   rubocop-rspec_rails (2.32.0) sha256=4a0d641c72f6ebb957534f539d9d0a62c47abd8ce0d0aeee1ef4701e892a9100
   ruby-progressbar (1.13.0) sha256=80fc9c47a9b640d6834e0dc7b3c94c9df37f08cb072b7761e4a71e22cff29b33
   rubyzip (3.6.0) sha256=268994d44d62282d1cfd99bf10eae48d7267199158ad7ea3e1fee2da9458b695
-  sassc (2.4.0) sha256=4c60a2b0a3b36685c83b80d5789401c2f678c1652e3288315a1551d811d9f83e
-  sassc-rails (2.1.2) sha256=5f4fdf3881fc9bdc8e856ffbd9850d70a2878866feae8114aa45996179952db5
   securerandom (0.4.1) sha256=cc5193d414a4341b6e225f0cb4446aceca8e50d5e1888743fac16987638ea0b1
   selenium-webdriver (4.49.0) sha256=b430f091a3cababb356b6f6132e0e4f385b017819355f563557e1537819edc89
   smart_properties (1.17.0) sha256=f9323f8122e932341756ddec8e0ac9ec6e238408a7661508be99439ca6d6384b
@@ -556,7 +521,6 @@ CHECKSUMS
   sprockets-rails (3.5.2) sha256=a9e88e6ce9f8c912d349aa5401509165ec42326baf9e942a85de4b76dbc4119e
   stimulus-rails (1.3.4) sha256=765676ffa1f33af64ce026d26b48e8ffb2e0b94e0f50e9119e11d6107d67cb06
   thor (1.5.0) sha256=e3a9e55fe857e44859ce104a84675ab6e8cd59c650a49106a05f55f136425e73
-  tilt (2.9.0) sha256=da5735d0280bba96e9a91041bb14aee435ccad5c17b0fa519249ae543d9aa3a5
   timeout (0.6.1) sha256=78f57368a7e7bbadec56971f78a3f5ecbcfb59b7fcbb0a3ed6ddc08a5094accb
   tsort (0.2.0) sha256=9650a793f6859a43b6641671278f79cfead60ac714148aabe4e3f0060480089f
   turbo-rails (2.0.23) sha256=ee0d90733aafff056cf51ff11e803d65e43cae258cc55f6492020ec1f9f9315f

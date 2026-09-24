@@ -72,7 +72,7 @@ gem 'pgreset', group: %i[development test]
 gem 'annotaterb', group: :development
 
 # Preset CSS styles
-gem 'bootstrap', '~> 5.2.3'
+gem 'bootstrap', '~> 5.3.8'
 
 # Cohesive themes using Bootstrap styles
 gem 'bootswatch', github: 'thomaspark/bootswatch', tag: 'v5.2.3'
