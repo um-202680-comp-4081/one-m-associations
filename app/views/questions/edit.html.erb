@@ -2,7 +2,7 @@
 
 <h1>Editing question</h1>
 
-<%= bootstrap_form_with model: @question, method: :patch, url: question_path(@question) do |f| %>
+<%= bootstrap_form_with model: @question, method: :patch, url: quiz_question_path(@quiz, @question) do |f| %>
   <%= f.text_field :stem %>
   <%= f.text_field :answer %>
   <%= f.text_field :distractor_1 %>
@@ -13,6 +13,6 @@
 <br>
 
 <div>
-  <%= link_to 'Show this question', question_path(@question) %> |
-  <%= link_to 'Back to questions', questions_path %>
+  <%= link_to 'Show this question', quiz_question_path(@quiz, @question) %> |
+  <%= link_to 'Back to questions', quiz_questions_path(@quiz) %>
 </div>
