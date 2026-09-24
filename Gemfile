@@ -63,7 +63,7 @@ end
 #
 
 # Pin JSON 2.x for compatibility with Rails 7.2; JSON 3.x removed quirks_mode support.
-gem 'json', '~> 2.21'
+gem 'json', '~> 3.0'
 
 # Disconnects all connections to PostgreSQL db when running rails db:reset
 gem 'pgreset', group: %i[development test]
