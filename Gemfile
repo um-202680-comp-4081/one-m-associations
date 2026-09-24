@@ -75,7 +75,7 @@ gem 'annotaterb', group: :development
 gem 'bootstrap', '~> 5.2.3'
 
 # Cohesive themes using Bootstrap styles
-gem 'bootswatch', github: 'thomaspark/bootswatch', tag: 'v5.2.3'
+gem 'bootswatch', github: 'thomaspark/bootswatch', tag: 'v5.3.8'
 
 # Bootstrap-styled rails form helpers
 gem 'bootstrap_form', '~> 5.2.3'
